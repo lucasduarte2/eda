@@ -7,7 +7,8 @@ class InserePrimeiro {
 		Scanner entrada = new Scanner(System.in);
 		String[] numeros = entrada.nextLine().split(" ");
 		int[] array = parseInt(numeros);
-		// int[] a = {5, 2, 6, 9, 11, 13};
+		System.out.println(array.length);
+		System.out.println(array.length - 1);
 		System.out.println(ordenaUltimo2(array));
 	}
 

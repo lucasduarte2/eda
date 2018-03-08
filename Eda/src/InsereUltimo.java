@@ -7,26 +7,8 @@ class InsereUltimo {
 		Scanner entrada = new Scanner(System.in);
 		String[] numeros = entrada.nextLine().split(" ");
 		int[] array = parseInt(numeros);
-		// int[] a = {2, 6, 9, 11, 13, 5};
 		System.out.println(ordenaUltimo2(array));
 	}
-
-	// private static String ordenaUltimo(int[] numeros) {
-	//
-	// for (int i = 1; i < numeros.length; i++) {
-	// int j = i;
-	// while (j > 0 && numeros[j] < numeros[j - 1] ) {
-	// int aux = numeros[j - 1];
-	// numeros[j - 1] = numeros[j];
-	// numeros[j] = aux;
-	// j--;
-	// }
-	// System.out.println(Arrays.toString(numeros));
-	//
-	// }
-	//
-	// return Arrays.toString(numeros);
-	// }
 
 	private static String ordenaUltimo2(int[] numeros) {
 
