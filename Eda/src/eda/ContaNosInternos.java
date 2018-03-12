@@ -129,48 +129,51 @@ class ContaNosInternos {
 	
 
 	public static void main(String[] args) {
+		
 		//EncaminhamentoEmBST
 		//conta folhas
 		//soma folhas
 		//- 'quantidade_elementos_maiores_bst'
 		//isHeap
 		//rotacoes
-//		ContaNosInternos novaArvore = new ContaNosInternos();
-//		Scanner entrada = new Scanner(System.in);
-//		String[] arvore = entrada.nextLine().split(" ");
-//		int[] numeros = parseInt(arvore);
-//		for (int i = 0; i < numeros.length; i++) {
-//			novaArvore.addNo(numeros[i]);
-//		}
-//		novaArvore.imprimeEmLarguraD();
-//		
-//		
-//		
-//		
-		
 		ContaNosInternos novaArvore = new ContaNosInternos();
-		ContaNosInternos novaArvore2 = new ContaNosInternos();
 		Scanner entrada = new Scanner(System.in);
-		int valor = entrada.nextInt();
-		Integer arvore1 = null;
-		Integer arvore2 = null;
+		String[] arvore = entrada.nextLine().split(" ");
+		int[] numeros = parseInt(arvore);
+		for (int i = 0; i < numeros.length; i++) {
+			novaArvore.addNo(numeros[i]);
+		}
+		//novaArvore.imprimeEmLarguraD();
+		novaArvore.preOrder();
+		novaArvore.emOrder();
+		novaArvore.posOrder();
 		
-		for (int i = 0; i < valor; i++) {
-			arvore1 = entrada.nextInt();
-			novaArvore.addNo(arvore1);
-		}
 		
-		for (int i = 0; i < valor; i++) {
-			arvore2 = entrada.nextInt();
-			novaArvore2.addNo(arvore2);
-		}
 		
-		if(novaArvore.calcularAlturaArvore() == novaArvore2.calcularAlturaArvore()){
-			System.out.println("Arvores similares.");
-		}
-		else{
-			System.out.println("Arvores com estruturas diferentes.");
-		}
+		
+//		ContaNosInternos novaArvore = new ContaNosInternos();
+//		ContaNosInternos novaArvore2 = new ContaNosInternos();
+//		Scanner entrada = new Scanner(System.in);
+//		int valor = entrada.nextInt();
+//		Integer arvore1 = null;
+//		Integer arvore2 = null;
+//		
+//		for (int i = 0; i < valor; i++) {
+//			arvore1 = entrada.nextInt();
+//			novaArvore.addNo(arvore1);
+//		}
+//		
+//		for (int i = 0; i < valor; i++) {
+//			arvore2 = entrada.nextInt();
+//			novaArvore2.addNo(arvore2);
+//		}
+//		
+//		if(novaArvore.calcularAlturaArvore() == novaArvore2.calcularAlturaArvore()){
+//			System.out.println("Arvores similares.");
+//		}
+//		else{
+//			System.out.println("Arvores com estruturas diferentes.");
+//		}
 	}
 
 }
